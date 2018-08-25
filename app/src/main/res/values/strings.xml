@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GK ADDA</string>
+
+    <string name="title_activity_notes_details">NotesDetailsActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- AdMob ad unit IDs -->
+    <string name="banner1">ca-app-pub-2900450499358559/5902298330</string>
+    <string name="banner2">ca-app-pub-2900450499358559/2701419921</string>
+    <string name="banner3">ca-app-pub-2900450499358559/2616470070</string>
+    <string name="banner4">ca-app-pub-2900450499358559/4667918349</string>
+    <string name="banner5">ca-app-pub-2900450499358559/1055976392</string>
+    <string name="interstitial1">ca-app-pub-2900450499358559/6473143973</string>
+    <string name="interstitial2">ca-app-pub-2900450499358559/4015459452</string>
+
+</resources>

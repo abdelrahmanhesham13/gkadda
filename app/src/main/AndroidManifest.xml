@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="skiteapps.gkadda">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity android:name="skiteapps.gkadda.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.PracticeGkActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.MainActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.QuizActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.PracticeGkActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.PracticeGkActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.QuestionsActivity"
+            android:parentActivityName="skiteapps.gkadda.QuizActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.QuizActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.ShortQA"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.MainActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.ShortQASets"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.ShortQA">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.ShortQA" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.ShortQAQuestions"
+            android:parentActivityName="skiteapps.gkadda.ShortQASets">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.ShortQASets" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.QuizTestActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.MainActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.QuizTestQuestionsActivity"
+            android:parentActivityName="skiteapps.gkadda.QuizTestActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.QuizTestActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.NotesActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.MainActivity" />
+        </activity>
+        <activity android:name="skiteapps.gkadda.NoteDetailsActivity" android:parentActivityName=".NotesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.NotesActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.CurrentAffairsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.MainActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.CurrentAffairsActivityQuestionsActivity"
+            android:parentActivityName="skiteapps.gkadda.CurrentAffairsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.CurrentAffairsActivity" />
+        </activity>
+        <activity
+            android:name="skiteapps.gkadda.PointsToRememberActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="skiteapps.gkadda.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.MainActivity" />
+        </activity>
+        <activity android:name="skiteapps.gkadda.PointsToRememberPointActivity" android:parentActivityName="skiteapps.gkadda.PointsToRememberActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="skiteapps.gkadda.PointsToRememberActivity" />
+        </activity>
+
+        <!--Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

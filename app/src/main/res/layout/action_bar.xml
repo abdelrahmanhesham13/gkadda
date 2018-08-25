@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/action_bar"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questions"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/number_now"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seconds"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/number_now"/>
+</RelativeLayout>
